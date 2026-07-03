@@ -6,6 +6,9 @@
 font-family: "Roboto", sans-serif;
 }
 
+html { 
+    scroll-behavior: smooth;
+}
 .text__purple{ 
     color: #7342d6; 
 
@@ -64,6 +67,10 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+.no-cursor { 
+    cursor: not-allowed;
 }
 .nav__link {
     text-decoration: none;
@@ -331,10 +338,7 @@ FETURES
 
  /* fetures */
 
- #fetures { 
-    background-color: white; 
-
- }
+ 
 
 
 
@@ -348,4 +352,91 @@ FETURES
 .book__features { 
     text-align: center;    
 }
+
+.book__img--wrapper:hover { 
+    transform: scale(1.2); 
+
+}
+
+.book__features:hover .book__title {
+    text-decoration: underline;
+    transform: translateY(8px)
+}
+
+
+/*
+explore
+*/
+
+#explore { 
+    background-color:rgba(115, 66, 214, 0.1); ;
+}
+
+.explore__description {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+footer
+*/
+
+#footer { 
+    background-color: #242424;
+}
+
+.footer__row { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social--list { 
+    text-align: center;
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+    
+
+    
+
+
+}
+.footer__copyright { 
+    text-align: center;
+    color: white; 
+
+
+}
+.footer__link { 
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: white;
+    text-decoration: none;
+    transition: all 800ms ease; 
+    
+
+}
+
+.footer__logo--img { 
+    width: 200px;
+    filter: invert(1) grayscale(1);
+    
+}
+.footer__img { 
+    width: 100%;
+    padding: 0; 
+}
+
+.footer__link:hover { 
+    text-decoration: underline;
+    transform: scale(1.04);
+}
+
+
 
