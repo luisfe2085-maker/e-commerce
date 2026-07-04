@@ -21,25 +21,26 @@
             
             <li><a class="nav__link nav__link--primary" href="#">Books</a></li>
         </ul>
-        </div>
-        <button class="btn__menu">
+        
+        <button class="btn__menu" onclick="openMenu()">
             <i class="fa-solid fa-bars"></i>
         </button>
         <div class="menu__backdrop">
-            <button class="btn__menu--close btn__menu">
+            <button onclick="closeMenu()" class="btn__menu--close btn__menu">
                 <i class="fa-solid fa-times"></i>
             </button>
             <ul class="menu__links">
-                <li class="menu__list">
-                    <a class="menu__link" href="#">Home</a>
+                <li onclick="closeMenu()" class="menu__list">
+                    <a class="menu__link" href="#landing">Home</a>
                 </li>
-                <li class="menu__list">
+                <li onclick="closeMenu()" class="menu__list">
                     <a class="menu__link" href="#features">Books</a>
                 </li>
-                <li class="no-cursor menu__list ">
+                <li onclick="closeMenu()" class="no-cursor menu__list ">
                     <a class="menu__link" href="#">Contact</a>
                 </li>
             </ul>
+        </div>
         </div>
     </nav>
 
