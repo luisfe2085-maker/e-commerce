@@ -369,13 +369,15 @@ FETURES
     gap: 24px; 
     justify-content: center;
     align-items: center;
+    
 
 }
 .book {
-    flex: 0.25
+    
     min-width: 250px; 
     padding: 24px; 
     text-align: center; 
+    width: (100%/4);
     
 
 
@@ -550,4 +552,10 @@ footer
 }
  @media (max-width: 1500px){
     .books{ flex-wrap: wrap;}
+ }
+
+ @media (max-width:700px) {
+    .highlight__para {
+        display: none;
+    }
  }
